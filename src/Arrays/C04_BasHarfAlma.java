@@ -10,24 +10,14 @@ alınız.
 
     public static void main(String[] args) {
 
-        // I.YOL
-        String[] b = new String[]{"Kemal", "Jonathan", "Jackson", "Mark", "Angie", "Veli"};
-        for (int i = 0; i <b.length ; i++) {
-            if (b[i].endsWith("n") || b[i].endsWith("k")){
-                System.out.print(b[i].substring(0,1)+", ");
+        String[]arr=new String[]{ "Kemal", "Jonathan", "Mark", "Jackson", "Ali"};
+        for (String w:arr){
+            if (w.endsWith("n") || w.endsWith("k")){
+                System.out.print(w.substring(0,1));
             }
         }
-        //II.YOL
-        String[] c = new String[]{"Kemal", "Jonathan", "Mark", "Angie", "Veli"};
-        String initials = "";
-        for(String w : c){
-            if(w.endsWith("n") || w.endsWith("k")){
-                initials = initials + w.substring(0,1);
-            }
-        }
-        System.out.println(initials);
-
+    }
     }
 
-}
+
 
